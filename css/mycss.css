@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.lbox-details h1{
+	font-family: 'Dancing Script', cursive;
+}
+.title-box h2 {
+	font-size: 60px;
+	font-family: 'Dancing Script', cursive;
+	color: #222222;
+}
+.title-box h2 span {
+	color: #881228;
+	font-family: 'Dancing Script', cursive;
+	text-decoration: initial;
+}
+.about-main-info h2 span{
+	font-family: 'Dancing Script', cursive;
+	text-decoration: initial;
+}
+.lbox-details h3 {
+	font-family: 'Dancing Script', cursive;
+}
+
+.lbox-details {
+	text-align: center;
+}
+  /* Cập nhật font chữ cho h1 */
+h1 {
+	font-family: 'Roboto', sans-serif; /* Sử dụng font Roboto cho h1 */
+	font-size: 36px; /* Kích thước chữ cho h1 */
+	font-weight: 700; /* Độ đậm của chữ */
+	color: #333; /* Màu sắc chữ */
+}
+
+.calendar h3 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.countdown #timer h3 {
+	font-family: 'Engagement', cursive;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: normal;
+	padding: 0px;
+	padding-top: 28px;
+	padding-bottom: 17px;
+	background: #890025;
+}
+
+.calendar {
+	margin: 0px auto;
+	width: 90%; /* Thay đổi chiều rộng thành 90% để phù hợp với màn hình nhỏ hơn */
+	max-width: 500px; /* Giới hạn chiều rộng tối đa để không quá rộng trên màn hình lớn */
+}
+
+.days, .dates {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	text-align: center;
+	font-weight: bold;
+}
+
+.days div {
+	padding: 0px; /* Thêm padding để các ngày trong tuần có khoảng cách */
+	background-color: #f0f0f0; /* Nền cho ngày trong tuần */
+	border: 1px solid #FF4500; /* Viền cho ngày trong tuần với màu nổi bật */
+}
+
+.dates div {
+	padding: 0px; /* Thêm padding cho các ô ngày */
+	margin: 2px;
+	border-radius: 5px; /* Bo tròn góc cho các ô ngày */
+	border: 2px solid #FF4500; /* Viền cho các ô ngày với màu nổi bật */
+	background-color: #f9f9f9; /* Nền cho ô ngày */
+	cursor: pointer;
+	transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp khi hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+	.calendar {
+		width: 95%; /* Giảm chiều rộng xuống 95% trên màn hình nhỏ */
+	}
+
+	.days div, .dates div {
+		padding: 8px; /* Giảm padding trên các ô để phù hợp với màn hình nhỏ */
+	}
+
+	.dates div {
+		margin: 1px; /* Giảm margin cho các ô ngày */
+	}
+	.countdown {
+		height: 450px;
+		max-height: 450px;
+		border-radius: 0px;
+	}
+	
+	.title-box h2 span {
+		color: #881228;
+		font-family: 'Dancing Script', cursive;
+		text-decoration: initial;
+	}
+	
+	.title-box h2 {
+		font-size: 40px;
+		font-family: 'Dancing Script', cursive;
+		color: #222222;
+	}
+	
+}
+
+.dates div.selected {
+	background-color: #FF7F50; /* Màu nền cho ngày được chọn */
+	color: white; /* Màu chữ cho ngày được chọn */
+	font-weight: bold;
+	border-color: #FF4500; /* Màu viền cho ngày được chọn */
+}
