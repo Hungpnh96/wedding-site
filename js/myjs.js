@@ -54,3 +54,48 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Tạo lịch cho tháng 1 năm 2025
 	generateCalendar();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+	const audio = document.getElementById('backgroundAudio');
+	const audioIcon = document.getElementById('audioIcon');
+	let isPlaying = false;
+
+	// Function để chuyển đổi trạng thái âm thanh
+	document.getElementById('audioToggle').addEventListener('click', function () {
+		if (isPlaying) {
+			audio.pause();
+			audioIcon.classList.remove('fa-volume-up');
+			audioIcon.classList.add('fa-volume-mute');
+		} else {
+			audio.play();
+			audioIcon.classList.remove('fa-volume-mute');
+			audioIcon.classList.add('fa-volume-up');
+		}
+		isPlaying = !isPlaying;
+	});
+
+	// Bắt sự kiện scroll
+	let hasPlayed = false; // Biến để kiểm soát chỉ phát nhạc một lần khi cuộn
+	window.addEventListener('scroll', function () {
+		if (!hasPlayed) {
+			audio.play();
+			hasPlayed = true;
+			audioIcon.classList.remove('fa-volume-mute');
+			audioIcon.classList.add('fa-volume-up');
+			isPlaying = true;
+		}
+	});
+
+	// Cập nhật icon dựa trên trạng thái của audio
+	audio.addEventListener('play', function () {
+		isPlaying = true;
+		audioIcon.classList.remove('fa-volume-mute');
+		audioIcon.classList.add('fa-volume-up');
+	});
+
+	audio.addEventListener('pause', function () {
+		isPlaying = false;
+		audioIcon.classList.remove('fa-volume-up');
+		audioIcon.classList.add('fa-volume-mute');
+	});
+});

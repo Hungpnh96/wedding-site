@@ -30,10 +30,52 @@
 	<link rel="stylesheet" href="css/mycss.css">
    <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	<style>
+		.row {
+		
+			flex-wrap: wrap; /* Cho phép các cột xuống hàng nếu không đủ chỗ */
+		}
 
+		.serviceBox {
+			flex-direction: column; /* Đặt chiều hướng là cột */
+			justify-content: space-between; /* Căn chỉnh các phần tử theo chiều dọc */
+			height: 100%; /* Đặt chiều cao 100% cho các khối */
+			border: 1px solid #ddd; /* Thêm viền để dễ nhìn */
+			border-top: 2px solid #890025; /* Thêm viền màu xanh lá cây ở trên */
+			border-bottom: 2px solid #890025; /* Thêm viền màu xanh lá cây ở dưới */
+			padding: 15px; /* Thêm padding để tạo khoảng cách */
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng cho các khối */
+			transition: transform 0.3s; /* Hiệu ứng chuyển tiếp khi hover */
+		}
+
+		.serviceBox:hover {
+			transform: scale(1.05); /* Tăng kích thước khi hover */
+		}
+
+		.service-icon {
+			justify-content: center; /* Căn giữa theo chiều ngang */
+			align-items: center; /* Căn giữa theo chiều dọc */
+			font-size: 40px; /* Kích thước của biểu tượng (thay đổi theo ý muốn) */
+			margin-bottom: 15px; /* Khoảng cách dưới icon */
+		}
+
+	</style>
+	
 </head>
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
+	<!-- Popup audio control -->
+    <div id="audioPopup">
+        <button id="audioToggle">
+            <i id="audioIcon" class="fas fa-volume-mute"></i> <!-- Mặc định icon mute -->
+        </button>
+        <audio id="backgroundAudio" loop>
+            <source src="audio/wedding-music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+	
 	<!-- LOADER -->
     <div id="preloader">
 		<div class="preloader pulse">
@@ -465,7 +507,6 @@
 				<div class="col-lg-12">
 					<div class="title-box">
 						<h2>Wedding</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 					</div>
 				</div>
 			</div>
@@ -473,11 +514,15 @@
 			<div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="serviceBox">
-                        <div class="service-icon"><i class="flaticon-bachelorette-party"></i></div>
-                        <h3 class="title">Bachelor Party </h3>
-						<h4>04 July 2017 at 7:30 pm</h4>
+                        <div class="service-icon"><i class="fas fa-church"></i></div>
+                        <h3 class="title" style="margin-bottom:0px;">Thánh lễ hôn phối</h3>
+						<h3 class="title" style="margin-top:0px;">Wedding Mass </h3>
+						<h4>Ngày 04 tháng 7 năm 2024, lúc 16:30</h4>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur, deleniti eaque excepturi.
+                            Nhà Thờ Giáo Xứ Phú Long
+                        </p>
+						<p class="description">
+                           372/5 Nguyễn Văn Cừ, Tân Lập, Buôn Ma Thuột, Đắk Lắk, Việt Nam
                         </p>
                     </div>
                 </div>
@@ -485,21 +530,29 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="serviceBox">
                         <div class="service-icon"><i class="flaticon-wedding"></i></div>
-                        <h3 class="title">Wedding Ceremony </h3>
-						<h4>05 July 2017 at 9:30 pm</h4>
+						<h3 class="title" style="margin-bottom:0px;">Tiệc cưới (Nhà Gái)</h3>
+						<h3 class="title" style="margin-top:0px;">Wedding Reception </h3>
+						<h4>Ngày 04 tháng 7 năm 2024, lúc 16:30</h4>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur, deleniti eaque excepturi.
+                            Tư gia nhà gái
+                        </p>
+						<p class="description">
+                           Nguyễn Văn Cừ, Tân Hoà, Buôn Ma Thuột, Đắk Lắk, Việt Nam
                         </p>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-6">
                     <div class="serviceBox">
-                        <div class="service-icon"><i class="flaticon-reception-bell"></i></div>
-                        <h3 class="title">Reception Ceremony </h3>
-						<h4>06 July 2017 at 10:30 pm</h4>
+                        <div class="service-icon"><i class="flaticon-wedding"></i></div>
+						<h3 class="title" style="margin-bottom:0px;">Tiệc cưới (Nhà Trai)</h3>
+						<h3 class="title" style="margin-top:0px;">Wedding Reception </h3>
+						<h4>Ngày 04 tháng 7 năm 2024, lúc 16:30</h4>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur, deleniti eaque excepturi.
+                            Tư gia nhà trai
+                        </p>
+						<p class="description">
+                           Ấp 3B Xuân Bắc, Xuân Lộc, Đồng Nai
                         </p>
                     </div>
                 </div>
@@ -556,7 +609,6 @@
 		</div>
 	</div>
 	<!-- End Events -->
-	
 	<!-- Start Contact -->
 	<div id="contact" class="contact-box">
 		<div class="container">
@@ -640,6 +692,7 @@
 		<!-- </div> -->
 	<!-- </footer> -->
 	<!-- <!-- End Footer --> 
+
 
 	<!-- ALL JS FILES -->
 	<script src="js/jquery.min.js"></script>

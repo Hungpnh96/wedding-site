@@ -4,21 +4,21 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Tên không hợp lệ ";
 } else {
     $name = $_POST["name"];
 }
 
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "Email không hợp lệ ";
 } else {
     $email = $_POST["email"];
 }
 
 // MSG Guest
 if (empty($_POST["guest"])) {
-    $errorMSG .= "Subject is required ";
+    $errorMSG .= "Subject không hợp lệ ";
 } else {
     $guest = $_POST["guest"];
 }
@@ -26,7 +26,7 @@ if (empty($_POST["guest"])) {
 
 // MSG Event
 if (empty($_POST["event"])) {
-    $errorMSG .= "Subject is required ";
+    $errorMSG .= "Subject không hợp lệ ";
 } else {
     $event = $_POST["event"];
 }
@@ -34,14 +34,17 @@ if (empty($_POST["event"])) {
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+    $errorMSG .= "Lời chúc không hợp lệ ";
 } else {
     $message = $_POST["message"];
 }
 
 
-$EmailTo = "armanmia7@gmail.com";
-$Subject = "New Message Received";
+$EmailTo = "hungpnh96@gmail.com";
+$Subject = "Lời chúc từ " . $name;
+// Header để thiết lập email từ đâu gửi đi (giúp tránh spam folder)
+$headers = "From: $email";
+
 
 // prepare email body text
 $Body = "";
@@ -61,18 +64,13 @@ $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 
-// send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
-
-// redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
-}else{
-    if($errorMSG == ""){
-        echo "Something went wrong :(";
-    } else {
-        echo $errorMSG;
-    }
+// Gửi email
+if($errorMSG != ""){
+	echo($errorMSG );
 }
-
+else if (mail($EmailTo, $Subject, $Body, $headers)) {
+	echo "Lời chúc của bạn đã được gửi thành công!";
+} else {
+	echo "Có lỗi xảy ra khi gửi lời chúc, vui lòng thử lại.";
+}
 ?>

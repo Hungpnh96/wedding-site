@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+figcaption{
+	display:none;
+}
+
 .lbox-details h1{
 	font-family: 'Dancing Script', cursive;
 }
@@ -120,4 +124,42 @@ h1 {
 	color: white; /* Màu chữ cho ngày được chọn */
 	font-weight: bold;
 	border-color: #FF4500; /* Màu viền cho ngày được chọn */
+}
+
+#audioPopup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#audioToggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+#audioToggle i {
+  font-size: 24px;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  #audioPopup {
+	bottom: 10px;
+	right: 10px;
+	padding: 5px;
+  }
+
+  #audioToggle i {
+	font-size: 28px; /* Tăng kích thước icon cho mobile */
+  }
 }
