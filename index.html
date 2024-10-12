@@ -28,38 +28,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/mycss.css">
+	<link rel="stylesheet" href="css/maps.css">
    <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	
 	<style>
-		.row {
 		
-			flex-wrap: wrap; /* Cho phép các cột xuống hàng nếu không đủ chỗ */
-		}
-
-		.serviceBox {
-			flex-direction: column; /* Đặt chiều hướng là cột */
-			justify-content: space-between; /* Căn chỉnh các phần tử theo chiều dọc */
-			height: 100%; /* Đặt chiều cao 100% cho các khối */
-			border: 1px solid #ddd; /* Thêm viền để dễ nhìn */
-			border-top: 2px solid #890025; /* Thêm viền màu xanh lá cây ở trên */
-			border-bottom: 2px solid #890025; /* Thêm viền màu xanh lá cây ở dưới */
-			padding: 15px; /* Thêm padding để tạo khoảng cách */
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng cho các khối */
-			transition: transform 0.3s; /* Hiệu ứng chuyển tiếp khi hover */
-		}
-
-		.serviceBox:hover {
-			transform: scale(1.05); /* Tăng kích thước khi hover */
-		}
-
-		.service-icon {
-			justify-content: center; /* Căn giữa theo chiều ngang */
-			align-items: center; /* Căn giữa theo chiều dọc */
-			font-size: 40px; /* Kích thước của biểu tượng (thay đổi theo ý muốn) */
-			margin-bottom: 15px; /* Khoảng cách dưới icon */
-		}
 
 	</style>
 	
@@ -211,7 +186,6 @@
 				<div class="col-lg-12">
 					<div class="title-box">
 						<h2>Our Story</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 					</div>
 				</div>
 			</div>
@@ -570,7 +544,6 @@
 				<div class="col-lg-12">
 					<div class="title-box">
 						<h2>Events</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 					</div>
 				</div>
 			</div>
@@ -580,9 +553,10 @@
 						<div class="event-img">
 							<img class="img-fluid" src="images/event-img-01.jpg" alt="" />
 						</div>
-						<h2>2 June 2018 Engagement</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<h2>Lễ thành hôn</h2>
+						<h2>2 June 2025</h2>
+						<p>Nhà Thờ Giáo Xứ Phú Long </p>
+						<button id="openMap" onclick="openMap1()">Mở Google Maps</button>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -590,9 +564,10 @@
 						<div class="event-img">
 							<img class="img-fluid" src="images/event-img-02.jpg" alt="" />
 						</div>
-						<h2>3 June 2018 Main Ceremony </h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<h2>Tư gia nhà gái</h2>
+						<h2>2 June 2025</h2>
+						<p>Nhà Thờ Giáo Xứ Phú Long </p>
+						<button id="openMap" onclick="openMap2()">Mở Google Maps</button>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -600,15 +575,18 @@
 						<div class="event-img">
 							<img class="img-fluid" src="images/event-img-03.jpg" alt="" />
 						</div>
-						<h2>4 June 2018 Wedding party </h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
-						<a href="#">See location <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<h2>Tư gia nhà trai</h2>
+						<h2>2 June 2025</h2>
+						<p>Nhà Thờ Giáo Xứ Phú Long </p>
+						<button id="openMap" onclick="openMap3()">Mở Google Maps</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- End Events -->
+	
+	
 	<!-- Start Contact -->
 	<div id="contact" class="contact-box">
 		<div class="container">
@@ -708,6 +686,8 @@
 	<script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+	
 	<script src="js/myjs.js"></script>
+	<script src="js/maps.js"></script>
 </body>
 </html>
