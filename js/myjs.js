@@ -102,16 +102,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.getElementById('SendMessage').addEventListener('click', function () {
-    debugger;
     // Lấy giá trị từ các ô dữ liệu
     const senderName = document.getElementById('senderName').value;
-    const from = document.getElementById('from').value;
+    //const from = document.getElementById('from').value;
     const content = document.getElementById('message').value;
+	
+	// Lấy phần tử select
+	const selectElement = document.getElementById("from");
 
+	// Lấy text của option được chọn
+	const selectedText = selectElement.options[selectElement.selectedIndex].textContent;
+	
     // Tạo đối tượng dữ liệu JSON
     const data = {
         SenderName: senderName,
-        From: from,
+        From: selectedText,
         Content: content
     };
 
