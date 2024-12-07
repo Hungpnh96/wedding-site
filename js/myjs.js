@@ -1,11 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
 	// Cấu hình biến ngày, tháng, năm, giờ và phút
 	const year = 2025;
-	const month = 0; // Tháng 0 là tháng 1 (January)
-	const day = 9;
+	const month = 4; // Bắt đầu từ 0 là tháng 1
+	const day = 15; // Ngày 15
 	const hour = 11; // 11 giờ
 	const minute = 0; // 0 phút
 	const second = 0; // 0 giây
+	
+	// Hàm lấy tên tháng từ số tháng
+	function getMonthName(month) {
+		// const monthNames = [
+			// "January", "February", "March", "April", 
+			// "May", "June", "July", "August", 
+			// "September", "October", "November", "December"
+		// ];
+		
+		const monthNames = [
+			"Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Bốn", 
+			"Tháng Năm", "Tháng Sáu", "Tháng Bảy", "Tháng Tám", 
+			"Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai"
+		];
+
+		// Trả về tên tháng (0-based index)
+		return monthNames[month];
+	}
+
+	// Hàm hiển thị tháng trong HTML
+	function displayMonth() {
+		//const month = 4; // Tháng 5 (số 4 vì JavaScript bắt đầu từ 0)
+		const monthName = getMonthName(month); // Lấy tên tháng
+
+		// Gắn tên tháng vào HTML
+		document.getElementById("dateDisplay").textContent = `${monthName} ${year}`;
+	}
+
+	// Gọi hàm hiển thị
+	displayMonth();
+	
+	
+	
 
 	// Thiết lập ngày giờ mục tiêu
 	const targetDate = new Date(year, month, day, hour, minute, second).getTime();
@@ -21,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
 		document.getElementById("countdown").innerHTML = 
-			`${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+			`${days} Ngày ${hours} Giờ ${minutes} Phút ${seconds} Giây`;
 	}
 
 	// Cập nhật bộ đếm ngược mỗi giây
@@ -29,7 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Hàm tạo lịch
 	function generateCalendar() {
-		const daysInJanuary = 31; // Số ngày trong tháng 1
+		//const daysInMonth = 31; // Số ngày trong tháng 5
+		
+		const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+		// Nếu năm nhuận
+		if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+			daysInMonths[1] = 29; // Tháng 2 có 29 ngày
+		}
+		const daysInMonth = daysInMonths[month];
+
 		const firstDay = new Date(year, month, 1).getDay(); // Ngày bắt đầu của tuần (0-6)
 
 		const calendarDates = document.getElementById("calendar-dates");
@@ -40,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
 			calendarDates.innerHTML += `<div></div>`;
 		}
 
-		// Thêm các ngày trong tháng 1
-		for (let i = 1; i <= daysInJanuary; i++) {
+		// Thêm các ngày trong tháng 5
+		for (let i = 1; i <= daysInMonth; i++) {
 			if (i === day) {
 				// Nổi bật ngày đã chỉ định
 				calendarDates.innerHTML += `<div class="selected">${i}</div>`;
@@ -51,9 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
-	// Tạo lịch cho tháng 1 năm 2025
+	// Tạo lịch cho tháng 5 năm 2025
 	generateCalendar();
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
 	const audio = document.getElementById('backgroundAudio');
