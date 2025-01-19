@@ -22,7 +22,7 @@ jobs:
 
     - name: Deploy Code to Server
       run: |
-        ssh hungpnh96@hungpnh.myftp.org "
+        ssh -v hungpnh96@hungpnh.myftp.org "
           cd /home/hungpnh96/webapp/mywedding/wedding-site/ &&
           git reset --hard &&
           git clean -fd &&
