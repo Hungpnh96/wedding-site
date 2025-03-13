@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: Gotham;
-  src: url("/font/wedd/iCielGotham-Bold.woff") format("woff"), url("/font/wedd/iCielGotham-Bold.woff2") format("woff2");
+  src: url("./font/wedd/iCielGotham-Bold.woff") format("woff"), url("./font/wedd/iCielGotham-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
@@ -9,41 +9,41 @@
   font-family: Gotham;
   font-weight: 300;
   font-style: normal;
-  src: url("/font/wedd/iCielGotham-Light.woff2") format("woff2"), url("/font/wedd/iCielGotham-Light.woff") format("woff");
+  src: url("./font/wedd/iCielGotham-Light.woff2") format("woff2"), url("./font/wedd/iCielGotham-Light.woff") format("woff");
 }
 @font-face {
   font-family: Gotham;
   font-weight: 500;
   font-style: normal;
-  src: url("/font/wedd/iCielGotham-Medium.woff2") format("woff2"), url("/font/wedd/iCielGotham-Medium.woff") format("woff");
+  src: url("./font/wedd/iCielGotham-Medium.woff2") format("woff2"), url("./font/wedd/iCielGotham-Medium.woff") format("woff");
 }
 @font-face {
   font-family: Gotham;
-  src: url("/font/wedd/iCielGotham-Ultra.woff2") format("woff2"), url("/font/wedd/iCielGotham-Ultra.woff") format("woff");
+  src: url("./font/wedd/iCielGotham-Ultra.woff2") format("woff2"), url("./font/wedd/iCielGotham-Ultra.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: url("/font/wedd/SVN-GothamRounded.woff2") format("woff2"), url("/font/wedd/SVN-GothamRounded.woff") format("woff");
+  src: url("./font/wedd/SVN-GothamRounded.woff2") format("woff2"), url("./font/wedd/SVN-GothamRounded.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Gurmukhi;
-  src: url("/font/wedd/NVNGurmukhiMN-Bold.woff2") format("woff2"), url("/font/wedd/NVNGurmukhiMN-Bold.woff") format("woff");
+  src: url("./font/wedd/NVNGurmukhiMN-Bold.woff2") format("woff2"), url("./font/wedd/NVNGurmukhiMN-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  src: url("/font/wedd/NVNGurmukhiMN-Regular.woff2") format("woff2"), url("/font/wedd/NVNGurmukhiMN-Regular.woff") format("woff");
+  src: url("./font/wedd/NVNGurmukhiMN-Regular.woff2") format("woff2"), url("./font/wedd/NVNGurmukhiMN-Regular.woff") format("woff");
   font-family: Gurmukhi;
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Gurmukhi;
-  src: url("/font/wedd/NVNGurmukhiMN-BoldItalic.woff2") format("woff2"), url("/font/wedd/NVNGurmukhiMN-BoldItalic.woff") format("woff");
+  src: url("./font/wedd/NVNGurmukhiMN-BoldItalic.woff2") format("woff2"), url("./font/wedd/NVNGurmukhiMN-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
@@ -51,19 +51,19 @@
   font-family: Gurmukhi;
   font-style: italic;
   font-weight: normal;
-  src: url("/font/wedd/NVNGurmukhiMN-Italic.woff2") format("woff2"), url("/font/wedd/NVNGurmukhiMN-Italic.woff") format("woff");
+  src: url("./font/wedd/NVNGurmukhiMN-Italic.woff2") format("woff2"), url("./font/wedd/NVNGurmukhiMN-Italic.woff") format("woff");
 }
 @font-face {
   font-family: Arimo;
   font-style: italic;
   font-weight: normal;
-  src: url("/font/wedd/ARIMO-ITALIC-VARIABLEFONT_WGHT.TTF") format("truetype");
+  src: url("./font/wedd/ARIMO-ITALIC-VARIABLEFONT_WGHT.TTF") format("truetype");
 }
 @font-face {
   font-family: Arimo;
   font-style: normal;
   font-weight: normal;
-  src: url("/font/wedd/Arimo-Regular.woff2") format("woff2"), url("/font/wedd/Arimo-Regular.woff") format("woff");
+  src: url("./font/wedd/Arimo-Regular.woff2") format("woff2"), url("./font/wedd/Arimo-Regular.woff") format("woff");
 }
 * body {
   font-family: Gotham;

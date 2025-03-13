@@ -11,11 +11,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="format-detection" content="telephone=no">
       <title>Huy Hùng &amp; Ngọc Trâm</title>
-      <meta name="description" content="Huy Hùng &amp; Ngọc Trâm - Our wedding date: 07/01/2025 | Yêu còn hơn mê. Đó là nhu cầu được cảm thấy toàn bộ, cảm thấy an toàn, được chữa lành, kết hợp với một ai đó, trái tim và linh hồn">
+      <meta name="description" content="Huy Hùng &amp; Ngọc Trâm - Our wedding date: 03/05/2025 | Yêu còn hơn mê. Đó là nhu cầu được cảm thấy toàn bộ, cảm thấy an toàn, được chữa lành, kết hợp với một ai đó, trái tim và linh hồn">
       <meta property="og:site_name" content="Huy Hùng &amp; Ngọc Trâm">
       <meta property="og:type" content="website">
       <meta property="og:title" content="Huy Hùng &amp; Ngọc Trâm">
-      <meta property="og:description" content="Huy Hùng &amp; Ngọc Trâm - Our wedding date: 07/01/2025 | Yêu còn hơn mê. Đó là nhu cầu được cảm thấy toàn bộ, cảm thấy an toàn, được chữa lành, kết hợp với một ai đó, trái tim và linh hồn">
+      <meta property="og:description" content="Huy Hùng &amp; Ngọc Trâm - Our wedding date: 03/05/2025 | Yêu còn hơn mê. Đó là nhu cầu được cảm thấy toàn bộ, cảm thấy an toàn, được chữa lành, kết hợp với một ai đó, trái tim và linh hồn">
       <meta property="og:image:type" content="image/jpeg">
       <meta property="og:image:width" content="1200">
       <meta property="og:image:height" content="630">
@@ -28,7 +28,7 @@
       <!-- Fav and touch icons -->
       <link rel="icon" type="image/png" sizes="32x32" href="https://thiepcuoionline.huythanhjewelry.vn/img/7aa88a269f39195eb25da2bb198f0aa9.webp">
       <link rel="manifest" href="https://nhuhuy-tuyetmai.iwedding.info/templates/template19/images/fav_touch_icons/manifest.json">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js/dist/css/lightgallery-bundle.min.css">
+      <link rel="stylesheet" href="./js/lightgallery.js-master/src/js/lightgallery.js">>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <!-- Google Web Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -47,6 +47,7 @@
       <!-- Google tag (gtag.js) -->
       <script async="" src="./index_files/js(2)"></script>
 	  <script src="./js/myjs.js"></script>
+	   <script src="./js/maps.js"></script>
       <script>
          window.dataLayer = window.dataLayer || [];
          
@@ -511,7 +512,7 @@
                                        height: 50px;
                                        margin-top: 18px;
                                        " src="./index_files/fullLogo.png" alt="logo" class="hlogo" loading="lazy"> </a>
-                                    <a href="https://thiepcuoionline.huythanhjewelry.vn/hung-tram-07012025-2034/moi-cuoi#hero" class="nav-logo align-items-center h-100" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                                    <a href="#" class="nav-logo align-items-center h-100" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
                                        <h1 style="font-size:25px" class="upper">H &#9829; T</h1>
                                     </a>
                                     <!-- BEGIN MAIN MENU -->
@@ -634,6 +635,32 @@
             /* Điều chỉnh độ mờ */
             }
             }
+			
+			/* điều chỉnh màu */
+			section#hero::before, #story .bg-color-overlay::before, #invitation.bg-color-overlay::before {
+			background-color: #679f7f  !important;
+			}
+			.bg-color, .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover, #nav-mobile-btn, .light #nav-mobile-btn:active, .light #nav-mobile-btn:hover, .timeline .date, .timeline .description, .menu-section, .menu-section::before, .menu-wrapper, .map-info-container .info-wrapper .location-info, .marker:hover, .map_pins_full, .bmaid-gmen-color .image .hover-info, #testimonials, .gallery-scroller li, .page-header, .blog-listing .item .date, .blog-listing .post-content .date, .blog-main .item .date, .blog-main .post-content .date, .pagination ul#previous li a:hover, .pagination ul#next li a:hover, .widget-search form button:hover, .widget-newsletter, .widget-newsletter form button:hover, .form-check-input:checked, .progress-wrapper .progress .progress-bar, .cryptos-box-view .cryptos-box-view-close, .cryptos-box-view .coin-address {
+    background-color: #3fa563 !important;
+}
+			#giftregistry .events-boxs {
+    background-color:#3fa563 !important;
+}
+
+.invite .invite_info, .gallery-scroller li .hover-info, .gallery .item .hover-info {
+    background-color: #3fa563 !important;
+}
+
+/*
+.btn-menu-open, .btn-menu-close , #menu-access>ul>li{
+    background-color:#3fa563 !important;
+}
+*/
+
+#rsvp.section-bg-color {
+    background: linear-gradient(#f9f9f9 50%, #3fa563  50%) no-repeat !important;
+}
+
          </style>
          <section id="hero" class="editable-parent scroll-to  " style="min-height: 1031px;">
             <div class="ht-slideshow">
@@ -695,7 +722,7 @@
                                  <span class="d-block d-sm-inline animate-from-left animation-from-left editable" data-animation-direction="from-left" data-animation-delay="300" id="welcome_female-name">Ngọc Trâm</span>
                               </h1>
                               <div class="hero-subtitle light animate-fade animation-fade edit-inactive" id="preview-datepickerss" data-animation-direction="fade" data-animation-delay="1000">
-                                 07 tháng 01 2025
+                                 03 tháng 05 2025
                               </div>
                               <div style="display: flex; justify-content: center;" class="edit-active">
                                  <div class="input-group date" id="reservationdatetime" data-target-input="nearest" style="width: 300px">
@@ -902,14 +929,14 @@
                                  <span class="editable" id="thanks_couple-info_groom-info_father-title" style="margin-right: 5px">
                                  Con ông:
                                  </span>
-                                 <span class="parent-name editable" id="thanks_couple-info_groom-info_father-name">Nguyễn Đình Kiên</span>
+                                 <span class="parent-name editable" id="thanks_couple-info_groom-info_father-name">Phạm Ngọc Phương Anh</span>
                               </div>
                               <div class="parent-info">
                                  <span class="editable" id="thanks_couple-info_groom-info_mother-title" style="margin-right: 5px">
                                  Con bà:
                                  </span>
                                  <span class="parent-name editable" id="thanks_couple-info_groom-info_mother-name">
-                                 Vũ Thị Hồng
+                                 Hà Thị Thanh Hà
                                  </span>
                               </div>
                            </div>
@@ -919,7 +946,7 @@
                                  Con ông:
                                  </span>
                                  <span class="parent-name editable" id="thanks_couple-info_bride-info_father-name">
-                                 Nguyễn Đình Kiên
+                                 Cao Thọ Sơn
                                  </span>
                               </div>
                               <div class="parent-info">
@@ -927,7 +954,7 @@
                                  Con bà:
                                  </span>
                                  <span class="parent-name editable" id="thanks_couple-info_bride-info_mother-name">
-                                 Vũ Thị Hồng
+                                 Ngô Thị Thoa
                                  </span>
                               </div>
                            </div>
@@ -1014,7 +1041,7 @@
                                     <span class="neela-style"><span class="h-lines"></span><span class="v-lines"></span>
                                     <span class="h-lines"></span>
                                     <span class="v-lines"></span>
-                                    <span class="editable" id="story_date_title_1">BẮT ĐẦU TỪ</span>
+                                    <span class="editable" id="story_date_title_1">BẮT ĐẦU TỪ 2022</span>
                                     </span>
                                  </div>
                                  <div class="gallery-container">
@@ -1043,7 +1070,10 @@
                                              <h4 class="editable super-break font-h4" id="story_title_1">Chúng mình đã từng...
                                              </h4>
                                              <p class="editable super-break font-opensans" id="story_content_1">
-                                                Chúng mình đã từng là bạn " khá thân " từ hồi cấp 3. Đã từng nói với nhau" Ê ! Tới năm 27 tuổi mà mày chưa lấy vợ, tao chưa lấy chồng, mày lấy tao nhé" . Và chúng mình cũng chưa từng nghĩ sẽ có ngày yêu nhau. Vậy mà sau 8 năm, giờ đây chúng mình đã sắp ở một " Cương vị mới " ^^
+                                                Chúng mình quen nhau qua mạng xã hội, từ những tin nhắn làm quen đến những buổi trò chuyện không dứt. 
+												Một ngày, bạn rủ mình đi lễ nhà thờ. Lần đầu gặp, mình hồi hộp suýt làm rơi kinh thánh, còn bạn thì cười bảo sẽ giữ giúp. 
+												Từ đó, tình yêu lớn lên qua những buổi cầu nguyện và cà phê. 
+												Hôm nay, mình hạnh phúc vì hành trình ấy đã đưa chúng mình đến đây, trở thành một gia đình.
                                              </p>
                                           </div>
                                        </div>
@@ -1058,7 +1088,7 @@
                                     <span class="h-lines"></span>
                                     <span class="v-lines"></span>
                                     <span class="editable" id="story_date_title_2">
-                                    20/02/2020
+                                    20/10/2023
                                     </span>
                                     </span>
                                  </div>
@@ -1089,7 +1119,10 @@
                                                 Tình bạn thành tình yêu..
                                              </h4>
                                              <p class="editable super-break font-opensans" id="story_content_2">
-                                                Thời điểm đó, chúng mình đều đang độc thân. Huy ở Hải Phòng và mình ở Hà Nội. Cơ hội gặp nhau không nhiều, nhưng chúng mình vẫn luôn dành thời gian tâm sự với nhau như hai người bạn. Rồi tới 1 ngày đặc biệt, ngày 20/2/2020 khi cả 2 đã suy nghĩ đủ kỹ về mối quan hệ, thì chúng mình đã quyết định nói hết cảm xúc của mình với đối phương. Và sau ngày định mệnh đó, đã có " Chúng mình của hiện tại"
+                                                Đến ngày 20/10, mình quyết định cầu hôn. 
+												Chẳng có hoa hay ánh nến lãng mạn như người ta, chỉ có mình rón rén lôi chiếc nhẫn ra, tim đập thình thịch, 
+												rồi thủ thỉ: 'Làm vợ anh nhé?' Bạn nhìn mình, cười nhẹ, và gật đầu. 
+												Giản dị vậy thôi, nhưng khoảnh khắc ấy với mình là cả thế giới.
                                              </p>
                                           </div>
                                        </div>
@@ -1297,8 +1330,8 @@
          "thanks_couple-info_bride-draf_1": "The Bride",
          "thanks_couple-info_groom-draf_1": "The Groom",
          "gift-box_box_groom_info-qr-woman": "Ngân hàng: Techcombank\nTên: Ngọc Trâm\nSTK: 12349854060",
-         "giftregistry_wedding-gifts_img-0": "/newstorage/ek6XKzq7P1.webp",
-         "giftregistry_wedding-gifts_img-1": "/newstorage/Bu1DpNy5Id.webp",
+         "giftregistry_wedding-gifts_img-0": "/images/ek6XKzq7P1.webp",
+         "giftregistry_wedding-gifts_img-1": "/images/Bu1DpNy5Id.webp",
          "giftregistry_wedding-gifts_img-2": "/images/event.png",
          "giftregistry_wedding-gifts_date-0": "20:34 07/01/2025",
          "giftregistry_wedding-gifts_date-1": "20:34 07/01/2025",
@@ -1377,14 +1410,16 @@
                               <div class="center m-0 mt-2">
                                  <a href="#rsvp" class="btn btn-primary reverse scrollto text-white px-2" style="min-width: 240px; max-width: 240px; width: 255px;"><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Gửi lời chúc</a>
                               </div>
-                              <div class="center m-0">
-                                 <a href="./Accept.html" target="_blank" class="btn btn-primary reverse text-white px-2 mt-2" style="min-width: 240px; max-width: 240px; width: 255px;"><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Xác nhận tham dự</a>
-                              </div>
+							  
+                              <!-- <div class="center m-0"> -->
+                                 <!-- <a href="./Accept.html" target="_blank" class="btn btn-primary reverse text-white px-2 mt-2" style="min-width: 240px; max-width: 240px; width: 255px;"><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Xác nhận tham dự</a> -->
+                              <!-- </div> -->
+
                               <div class="date">
-                                 <span id="invitation_date" class="">07 tháng 01 2025</span>
+                                 <span id="invitation_date" class="">03 tháng 05 2025</span>
                               </div>
                               <div class="count-down-clock">
-                                 <div id="clock" data-date="2025-01-07" data-text-day="Ngày" data-text-hour="Giờ" data-text-minute="Phút" data-text-second="Giây">
+                                 <div id="clock" data-date="2025-05-03" data-text-day="Ngày" data-text-hour="Giờ" data-text-minute="Phút" data-text-second="Giây">
                                     <div class="box">
                                        <div>04</div>
                                        <span>Ngày</span>
@@ -1584,7 +1619,7 @@
                         3
                      </div>
                      <ul class="wedding-gifts" id="wedding-gifts">
-                        <style>
+					 <style>
                            .font-style-h3 {
                            font-family: "Open Sans", sans-serif;
                            font-size: 35px;
@@ -1607,34 +1642,67 @@
                                           </svg>
                                        </div>
                                        <input type="file" class="img-up-load" accept="image/*" style="display: none">
-                                       <img id="giftregistry_wedding-gifts_img-0" src="./index_files/ek6XKzq7P1.webp" alt="LỄ THÀNH HÔN" width="100" height="100" data-width="500" data-height="500" data-type="circle" class="d-inline-block rounded-circle me-0 mb-4 me-lg-3 mb-lg-0 output-image edit-im">
+                                       <img id="giftregistry_wedding-gifts_img-2" src="./index_files/event.png" alt="LỄ THÀNH HÔN" width="100" height="100" data-width="500" data-height="500" data-type="circle" class="d-inline-block rounded-circle me-0 mb-4 me-lg-3 mb-lg-0 output-image edit-im">
                                     </div>
                                     <div class="d-flex-2"></div>
                                     <div class="d-inline-block d-flex-3">
-                                       <h3 class="w-100 editable font-style-h3" id="giftregistry_wedding-gifts_title-0">
-                                          LỄ THÀNH HÔN
+                                       <h3 class="w-100 editable font-style-h2" id="giftregistry_wedding-gifts_title-2">
+                                          THÁNH LỄ HÔN PHỐI
                                        </h3>
+									    <div class="w-100 mb-0 mt-1" style="display: flex">
+                                          <p class="editable font-style-h4" id="giftregistry_wedding-gifts_location-2" style="text-align:left; margin: 0px !important;">
+                                              <b>Nhà Thờ Giáo Xứ Phú Long</b>
+                                          </p>
+                                       </div>
                                        <p class="w-100 mb-2 mt-2" style="display: flex;align-items: center;">
-                                          <i class="fa fa-clock" aria-hidden="true" style="padding-right: 3px;"></i>
-                                          <span id="giftregistry_wedding-gifts_date-0" class="editable edit-inactive font-style-h4">
-                                          20:34 07/01/2025
+                                          <i style="padding-right: 5px;margin: 0px ;">
+										  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+											  <path d="M8 3.5a.5.5 0 0 1 .5.5v4l2.5 1.5a.5.5 0 0 1-.5.866l-3-1.75V4a.5.5 0 0 1 .5-.5z"/>
+											  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1z"/>
+										  </svg>
+										  </i>
+                                          <span id="giftregistry_wedding-gifts_date-2" class="editable edit-inactive font-style-h4">
+                                          17:00 02/05/2025
                                           </span>
-                                          <input type="text" class="datetime-input edit-active flatpickr-input" style="display: inline" data-id="giftregistry_wedding-gifts_date-0" value="2025-01-07T20:34" readonly="readonly">
+                                          <input type="text" class="datetime-input edit-active flatpickr-input" style="display: inline" data-id="giftregistry_wedding-gifts_date-2" value="2025-09-20T22:37" readonly="readonly">
                                        </p>
+									   
                                        <div class="w-100 mb-0 mt-1" style="display: flex">
-                                          <i class="fa fa-map-marker" aria-hidden="true" style="margin: 4px 6px 0 1px;"></i>
-                                          <p class="editable font-style-h4" id="giftregistry_wedding-gifts_location-0" style="text-align:left;">
-                                             Địa điểm diễn ra sự kiện
+                                          <i  style="padding-right: 5px;margin: 0px ;">
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+												<path d="M11.5 6a3.5 3.5 0 1 0-7 0c0 3.038 3.5 7.5 3.5 7.5S11.5 9.038 11.5 6zM8 6a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+											</svg>
+											</i>
+                                          <p class="editable font-style-h4" id="giftregistry_wedding-gifts_location-2" style="text-align:left;">
+                                             372/5 Nguyễn Văn Cừ, Tân Lập, Buôn Ma Thuột, Đắk Lắk, Việt Nam
                                           </p>
                                        </div>
                                     </div>
                                  </div>
                                  <div class="info">
-                                    <a href="javascript:void(0)" id="" data-title="LỄ THÀNH HÔN" data-start="20:34 07/01/2025" data-end="20:34 07/01/2025" data-location="Địa điểm diễn ra sự kiện" class="btn btn-primary reverse calendar-button-custom-click" style="width: 220px;"><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Thêm vào lịch</a>
-                                 </div>
+									<!-- <div class="col-md-6 text-center"> -->
+										<!-- <a href="javascript:void(0)" id="" data-title="thánh lễ hôn phối" data-start="17:00 02/05/2025" data-end="18:00 03/05/2025"  -->
+											<!-- data-location="372/5 nguyễn văn cừ, tân lập, buôn ma thuột, đắk lắk, việt nam" class="btn btn-primary reverse calendar-button-custom-click" style="width: 180px;"> -->
+											<!-- <span class="h-lines"></span> -->
+											<!-- <span class="v-lines"></span> -->
+											<!-- <span class="h-lines"></span> -->
+											<!-- <span class="v-lines"></span> -->
+											<!-- thêm lịch -->
+										<!-- </a> -->
+									<!-- </div> -->
+										<a  href="javascript:openMap()" id="openMap"  class="btn btn-primary reverse" style="width: 220px;">
+											<span class="h-lines"></span>
+											<span class="v-lines"></span>
+											<span class="h-lines"></span>
+											<span class="v-lines"></span>
+											Mở bản đồ
+										</a>
+								</div>
+								
                               </div>
                            </div>
                         </li>
+                        
                         <style>
                            .font-style-h3 {
                            font-family: "Open Sans", sans-serif;
@@ -1662,26 +1730,46 @@
                                     </div>
                                     <div class="d-flex-2"></div>
                                     <div class="d-inline-block d-flex-3">
-                                       <h3 class="w-100 editable font-style-h3" id="giftregistry_wedding-gifts_title-1">
+                                       <h3 class="w-100 editable font-style-h2" id="giftregistry_wedding-gifts_title-1">
                                           LỄ VU QUY
                                        </h3>
+									   <div class="w-100 mb-0 mt-1" style="display: flex">
+                                          <p class="editable font-style-h4" id="giftregistry_wedding-gifts_location-2" style="text-align:left; margin: 0px !important;">
+                                              <b>Tư gia nhà gái</b>
+                                          </p>
+                                       </div>
                                        <p class="w-100 mb-2 mt-2" style="display: flex;align-items: center;">
-                                          <i class="fa fa-clock" aria-hidden="true" style="padding-right: 3px;"></i>
+                                          <i style="padding-right: 5px;margin: 0px ;">
+										  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+											  <path d="M8 3.5a.5.5 0 0 1 .5.5v4l2.5 1.5a.5.5 0 0 1-.5.866l-3-1.75V4a.5.5 0 0 1 .5-.5z"/>
+											  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1z"/>
+										  </svg>
+										  </i>
                                           <span id="giftregistry_wedding-gifts_date-1" class="editable edit-inactive font-style-h4">
-                                          20:34 07/01/2025
+                                          11:00 03/05/2025
                                           </span>
                                           <input type="text" class="datetime-input edit-active flatpickr-input" style="display: inline" data-id="giftregistry_wedding-gifts_date-1" value="2025-01-07T20:34" readonly="readonly">
                                        </p>
                                        <div class="w-100 mb-0 mt-1" style="display: flex">
-                                          <i class="fa fa-map-marker" aria-hidden="true" style="margin: 4px 6px 0 1px;"></i>
+                                          <i  style="padding-right: 5px;margin: 0px ;">
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+												<path d="M11.5 6a3.5 3.5 0 1 0-7 0c0 3.038 3.5 7.5 3.5 7.5S11.5 9.038 11.5 6zM8 6a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+											</svg>
+										</i>
                                           <p class="editable font-style-h4" id="giftregistry_wedding-gifts_location-1" style="text-align:left;">
-                                             Địa điểm diễn ra sự kiện
+                                             52 Đ. Ng. Chí Quốc, Tân Hoà, Buôn Ma Thuột, Đắk Lắk, Việt Nam
                                           </p>
                                        </div>
                                     </div>
                                  </div>
                                  <div class="info">
-                                    <a href="javascript:void(0)" id="" data-title="LỄ VU QUY" data-start="20:34 07/01/2025" data-end="20:34 07/01/2025" data-location="Địa điểm diễn ra sự kiện" class="btn btn-primary reverse calendar-button-custom-click" style="width: 220px;"><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Thêm vào lịch</a>
+                                    <a  href="javascript:openMap2()" id="openMap"  class="btn btn-primary reverse" style="width: 220px;">
+											<span class="h-lines"></span>
+											<span class="v-lines"></span>
+											<span class="h-lines"></span>
+											<span class="v-lines"></span>
+											Mở bản đồ
+										</a>
                                  </div>
                               </div>
                            </div>
@@ -1709,30 +1797,50 @@
                                           </svg>
                                        </div>
                                        <input type="file" class="img-up-load" accept="image/*" style="display: none">
-                                       <img id="giftregistry_wedding-gifts_img-2" src="./index_files/event.png" alt="LỄ THÀNH HÔN" width="100" height="100" data-width="500" data-height="500" data-type="circle" class="d-inline-block rounded-circle me-0 mb-4 me-lg-3 mb-lg-0 output-image edit-im">
+                                       <img id="giftregistry_wedding-gifts_img-0" src="./index_files/ek6XKzq7P1.webp" alt="LỄ THÀNH HÔN" width="100" height="100" data-width="500" data-height="500" data-type="circle" class="d-inline-block rounded-circle me-0 mb-4 me-lg-3 mb-lg-0 output-image edit-im">
                                     </div>
                                     <div class="d-flex-2"></div>
                                     <div class="d-inline-block d-flex-3">
-                                       <h3 class="w-100 editable font-style-h3" id="giftregistry_wedding-gifts_title-2">
+                                       <h3 class="w-100 editable font-style-h2" id="giftregistry_wedding-gifts_title-0">
                                           LỄ THÀNH HÔN
                                        </h3>
+									   <div class="w-100 mb-0 mt-1" style="display: flex">
+                                          <p class="editable font-style-h4" id="giftregistry_wedding-gifts_location-2" style="text-align:left; margin: 0px !important;">
+                                              <b>Tư gia nhà trai</b>
+                                          </p>
+                                       </div>
                                        <p class="w-100 mb-2 mt-2" style="display: flex;align-items: center;">
-                                          <i class="fa fa-clock" aria-hidden="true" style="padding-right: 3px;"></i>
-                                          <span id="giftregistry_wedding-gifts_date-2" class="editable edit-inactive font-style-h4">
-                                          22:37 20/09/2025
+                                          <i style="padding-right: 5px;margin: 0px ;">
+										  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+											  <path d="M8 3.5a.5.5 0 0 1 .5.5v4l2.5 1.5a.5.5 0 0 1-.5.866l-3-1.75V4a.5.5 0 0 1 .5-.5z"/>
+											  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1z"/>
+										  </svg>
+										  </i>
+                                          <span id="giftregistry_wedding-gifts_date-0" class="editable edit-inactive font-style-h4">
+                                          11:00 11/05/2025
                                           </span>
-                                          <input type="text" class="datetime-input edit-active flatpickr-input" style="display: inline" data-id="giftregistry_wedding-gifts_date-2" value="2025-09-20T22:37" readonly="readonly">
+                                          <input type="text" class="datetime-input edit-active flatpickr-input" style="display: inline" data-id="giftregistry_wedding-gifts_date-0" value="2025-01-07T20:34" readonly="readonly">
                                        </p>
                                        <div class="w-100 mb-0 mt-1" style="display: flex">
-                                          <i class="fa fa-map-marker" aria-hidden="true" style="margin: 4px 6px 0 1px;"></i>
-                                          <p class="editable font-style-h4" id="giftregistry_wedding-gifts_location-2" style="text-align:left;">
-                                             Địa điểm diễn ra sự kiện
+											<i  style="padding-right: 5px;margin: 0px ;">
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+												<path d="M11.5 6a3.5 3.5 0 1 0-7 0c0 3.038 3.5 7.5 3.5 7.5S11.5 9.038 11.5 6zM8 6a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+											</svg>
+											</i>
+                                          <p class="editable font-style-h4" id="giftregistry_wedding-gifts_location-0" style="text-align:left;">
+                                             Ấp 3B, Xuân Bắc, Xuân Lộc, Đồng Nai
                                           </p>
                                        </div>
                                     </div>
                                  </div>
                                  <div class="info">
-                                    <a href="javascript:void(0)" id="" data-title="LỄ THÀNH HÔN" data-start="22:37 20/09/2025" data-end="22:37 20/09/2025" data-location="Địa điểm diễn ra sự kiện" class="btn btn-primary reverse calendar-button-custom-click" style="width: 220px;"><span class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Thêm vào lịch</a>
+                                    <a  href="javascript:openMap3()" id="openMap"  class="btn btn-primary reverse" style="width: 220px;">
+											<span class="h-lines"></span>
+											<span class="v-lines"></span>
+											<span class="h-lines"></span>
+											<span class="v-lines"></span>
+											Mở bản đồ
+										</a>
                                  </div>
                               </div>
                            </div>
@@ -2516,14 +2624,7 @@
                                              </path>
                                           </svg>
                                        </span>
-                                       <span class="emoji-picker-button tooltip-custom" data-toggle="tooltip" data-placement="top" title="" data-bs-original-title="Chèn biểu tượng">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
-                                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16">
-                                             </path>
-                                             <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5">
-                                             </path>
-                                          </svg>
-                                       </span>
+                                      
                                        <div class="wishes-autocomplete-content" style="display: none;">
                                           <input type="text" id="searchWishSuggestions" onkeyup="searchWishSuggestionsFunction()" placeholder="Tìm kiếm...">
                                           <ul id="wishSuggestions">
@@ -3160,13 +3261,13 @@
                                     </div>
                                     <input type="file" class="img-up-load" accept="image/*" style="display: none">
                                     <div class="image-wrapper img-gif-box">
-                                       <img class="fullwidthimg qr-code-image qr-code-image-zoom m-auto mb-2  edit-im output-image" id="gift-box_box_groom_img" data-width="1200" data-height="1200" src="./index_files/qr.png" alt="">
+                                       <img class="fullwidthimg qr-code-image qr-code-image-zoom m-auto mb-2  edit-im output-image" id="gift-box_box_groom_img" data-width="1200" data-height="1200" src="./images/QR_Man.webp" alt="">
                                     </div>
                                  </div>
                                  <p class="editable font-style-h4" id="gift-box_box_groom_info-qr-man" style="padding-top: 15px;">
-                                    Ngân hàng: Techcombank<br>
-                                    Tên: Huy Hùng<br>
-                                    STK: 12349854060
+                                    Ngân hàng: TPBank<br>
+                                    Tên: Phạm Ngọc Huy Hùng<br>
+                                    STK: 02366189801
                                  </p>
                               </div>
                            </div>
@@ -3189,13 +3290,13 @@
                                     </div>
                                     <input type="file" class="img-up-load" accept="image/*" style="display: none">
                                     <div class="image-wrapper img-gif-box">
-                                       <img class="fullwidthimg qr-code-image qr-code-image-zoom m-auto mb-2 edit-im output-image" id="gift-box_box_bride_img" data-width="1200" data-height="1200" src="./index_files/qr.png" alt="">
+                                       <img class="fullwidthimg qr-code-image qr-code-image-zoom m-auto mb-2 edit-im output-image" id="gift-box_box_bride_img" data-width="1200" data-height="1200" src="./images/QR_woman.webp" alt="">
                                     </div>
                                  </div>
                                  <p class="editable font-style-h4" id="gift-box_box_groom_info-qr-woman" style="padding-top: 15px;">
-                                    Ngân hàng: Techcombank<br>
-                                    Tên: Ngọc Trâm<br>
-                                    STK: 12349854060
+                                    Ngân hàng: ACB<br>
+                                    Tên: Cao Thị Ngọc Trâm<br>
+                                    STK: 10275577
                                  </p>
                               </div>
                            </div>
@@ -3425,8 +3526,8 @@
          },
          "giftregistry_content": "Tình yêu đích thực đến với nhau trong những ngày tốt đẹp và sát cánh hơn trong những ngày tối tệ.",
          "invitation_male-name": "Huy Hùng",
-         "gift-box_box_bride_img": "/images/qr.png",
-         "gift-box_box_groom_img": "/images/qr.png",
+         "gift-box_box_bride_img": "/images/QR_woman.webp",
+         "gift-box_box_groom_img": "/images/QR_woman.webp",
          "invitation_female-name": "Ngọc Trâm",
          "giftregistry_wedding_count": "3",
          "gift-box_box_bride_img_dataset": {
@@ -3439,12 +3540,12 @@
          "width": 1200,
          "height": 1200
          },
-         "gift-box_box_groom_info-qr-man": "Ngân hàng: Techcombank\nTên: Huy Hùng\nSTK: 12349854060",
+         "gift-box_box_groom_info-qr-man": "Ngân hàng: TPBank\nTên: Huy Hùng\nSTK: 02366189801",
          "thanks_couple-info_bride-draf_1": "The Bride",
          "thanks_couple-info_groom-draf_1": "The Groom",
          "gift-box_box_groom_info-qr-woman": "Ngân hàng: Techcombank\nTên: Ngọc Trâm\nSTK: 12349854060",
-         "giftregistry_wedding-gifts_img-0": "/storage/ek6XKzq7P1.webp",
-         "giftregistry_wedding-gifts_img-1": "/storage/Bu1DpNy5Id.webp",
+         "giftregistry_wedding-gifts_img-0": "/image/QR_Man.webp",
+         "giftregistry_wedding-gifts_img-1": "/image/QR_woman.webp",
          "giftregistry_wedding-gifts_img-2": "/images/event.png",
          "giftregistry_wedding-gifts_date-0": "20:34 07/01/2025",
          "giftregistry_wedding-gifts_date-1": "20:34 07/01/2025",
@@ -3539,14 +3640,14 @@
                </span>
                </a>
             </li>
-            <li class="text-center">
-               <a href="./Accept.html" target="_blank" class="text-white">
-               <span class="content-button tooltipBtn">
-               <span class="tooltiptext">Xác nhận tham dự</span>
-               <img class="access-icon" src="./index_files/gift.png" alt="">
-               </span>
-               </a>
-            </li>
+            <!-- <li class="text-center"> -->
+               <!-- <a href="./Accept.html" target="_blank" class="text-white"> -->
+               <!-- <span class="content-button tooltipBtn"> -->
+               <!-- <span class="tooltiptext">Xác nhận tham dự</span> -->
+               <!-- <img class="access-icon" src="./index_files/gift.png" alt=""> -->
+               <!-- </span> -->
+               <!-- </a> -->
+            <!-- </li> -->
             <li class="text-center buttonDonate">
                <a href="#donate" class="text-white">
                <span class="content-button tooltipBtn">
