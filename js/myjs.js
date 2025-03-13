@@ -65,3 +65,34 @@ document.getElementById('SendMessage').addEventListener('click', function () {
         });
     });
 });
+
+
+
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
+
+
+document.addEventListener("touchmove", function (event) {
+    if (event.touches.length > 1) {
+        event.preventDefault();
+    }
+}, { passive: false });
+
+
+let isPlaying = false; // Biến trạng thái âm thanh
+
+function playPause() {
+	let volumeOffIcon = document.getElementById("playerVolumeOff");
+	let volumeOnIcon = document.getElementById("playerVolumeOn");
+
+	if (isPlaying) {
+		volumeOffIcon.style.display = "block";
+		volumeOnIcon.style.display = "none";
+	} else {
+		volumeOffIcon.style.display = "none";
+		volumeOnIcon.style.display = "block";
+	}
+
+	isPlaying = !isPlaying; // Đảo trạng thái
+}
