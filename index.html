@@ -3174,13 +3174,13 @@
 				});
 				return;
 			}
-
+			var stringFrom = from == "1" ? "Bạn cô dâu": "Bạn chú rể";
+			
 			var data = {
 				SenderName: name,
-				From: from,
+				From: stringFrom,
 				Content: blessing
 			};
-
 			// Hiển thị loading
 			$('#loading-overlay').show();
 			debugger;
