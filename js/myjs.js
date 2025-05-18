@@ -21,8 +21,8 @@ document.getElementById('SendMessage').addEventListener('click', function () {
     // Hiển thị loading spinner
     document.getElementById('loading').style.display = 'block';
 
-    //fetch('https://hungpnh.myftp.org/api/v1/telegram/sendMessage', {
-	fetch('http://localhost:5000/api/v1/telegram/sendMessage', {
+    fetch('https://hungpnh.dev/api/v1/telegram/sendMessage', {
+	//fetch('http://localhost:5000/api/v1/telegram/sendMessage', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json', // Đặt Content-Type là application/json
