@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /home/hungpnh96/webapp/mywedding/wedding-site/ 
+            cd /home/hungpnh/FE/wedding-site/ 
             git reset --hard
             git clean -fd 
             git pull origin main
