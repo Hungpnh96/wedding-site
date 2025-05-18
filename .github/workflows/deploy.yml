@@ -1,34 +1,23 @@
-name: Deploy to Linux Server
+name: Deploy to Server
 
 on:
   push:
     branches:
-      - main  # Triển khai khi có push vào nhánh main
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
-
-    - name: Set up SSH
-      run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -H hungpnh.myftp.org >> ~/.ssh/known_hosts
-
-    - name: Deploy Code to Server
-      run: |
-        ssh -v hungpnh96@hungpnh.myftp.org "
-          cd /home/hungpnh96/webapp/mywedding/wedding-site/ &&
-          git reset --hard &&
-          git clean -fd &&
-          git pull origin main &&
-          # Thêm lệnh khởi chạy ứng dụng nếu cần, ví dụ:
-          # pm2 restart app_name (nếu dùng Node.js)
-          # systemctl restart myapp (nếu là ứng dụng khác)
-          echo 'Deployment completed successfully'
-        "
+      - name: SSH and Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            cd /home/hungpnh96/webapp/mywedding/wedding-site/ &&
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart app
