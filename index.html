@@ -2672,8 +2672,9 @@
                            </div>
 						   <div >
 								<select class="form-control" id="guest-from" >
-								  <option value="1">Bạn cô dâu</option>
-								  <option value="2">Bạn chú rễ</option>
+								  <option value="0">Người thân của ...*</option>
+								  <option value="1">Cô dâu</option>
+								  <option value="2">Chú rễ</option>
 								</select>
 								<div class="help-block with-errors"></div>
 							</div> 
@@ -3165,6 +3166,17 @@
 				});
 				return;
 			}
+			if (from == "0") {
+				//showErrorPopup('Lời chúc không được để trống!');
+				Swal.fire({
+					 icon: 'error',
+					 title: 'Thất bại!',
+					 text: 'Bạn là người thân của ???' // Hiển thị message từ phản hồi
+				});
+				return;
+			}else{
+				var stringFrom = from == "1" ? "Cô dâu": "Chú rể";
+			}
 			if (!blessing) {
 				//showErrorPopup('Lời chúc không được để trống!');
 				Swal.fire({
@@ -3174,7 +3186,6 @@
 				});
 				return;
 			}
-			var stringFrom = from == "1" ? "Bạn cô dâu": "Bạn chú rể";
 			
 			var data = {
 				SenderName: name,
