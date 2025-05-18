@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const popupContent = document.getElementById('popupContent');
     const popupIcon = document.getElementById('popupIcon');
 
-    // Hiện popup khi hover vào icon
-    popupIcon.addEventListener('click', function () {
-        popupContent.style.display = popupContent.style.display === 'none' ? 'block' : 'none';
-    });
+    // // Hiện popup khi hover vào icon
+    // popupIcon.addEventListener('click', function () {
+        // popupContent.style.display = popupContent.style.display === 'none' ? 'block' : 'none';
+    // });
 });
 
 // Hàm mở Google Maps
