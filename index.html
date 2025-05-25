@@ -55,6 +55,18 @@
 	  <script src="./js/myjs.js"></script>
 	   <script src="./js/maps.js"></script>
       <script>
+	  
+		$(document).ready(function () {
+    $('.btn-blessing').click(function () {
+      $('#loading-overlay').show();
+      // Giả lập delay 2 giây để kiểm tra loading
+      setTimeout(function () {
+        $('#loading-overlay').hide();
+      }, 2000);
+    });
+  });
+  
+  
          window.dataLayer = window.dataLayer || [];
          
          function gtag() {
@@ -493,21 +505,30 @@
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<style>
 			#loading-overlay {
-				display: none;
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba(0, 0, 0, 0.5);
-				z-index: 1000;
-				justify-content: center;
-				align-items: center;
+			  display: none;
+			  position: fixed;
+			  top: 0; left: 0;
+			  width: 100%; height: 100%;
+			  background-color: rgba(0,0,0,0.5);
+			  z-index: 9999;
 			}
-			#loading-spinner {
-				color: white;
-				font-size: 20px;
+
+			.spinner {
+			  position: absolute;
+			  top: 50%; left: 50%;
+			  transform: translate(-50%, -50%);
+			  border: 8px solid #f3f3f3;
+			  border-top: 8px solid #3498db;
+			  border-radius: 50%;
+			  width: 60px; height: 60px;
+			  animation: spin 1s linear infinite;
 			}
+
+			@keyframes spin {
+			  0% { transform: translate(-50%, -50%) rotate(0deg); }
+			  100% { transform: translate(-50%, -50%) rotate(360deg); }
+			}
+
 		</style>
    </head>
    <body class="">
@@ -3148,7 +3169,7 @@
 			<!-- }); -->
 		<!-- }); -->
 		
-		$('.btn-blessing').on('click', function(e) {
+		$('.btn-blessing1').on('click', function(e) {
 		
 			e.preventDefault();
 
@@ -3196,7 +3217,7 @@
 			$('#loading-overlay').show();
 			debugger;
 			$.ajax({
-				url: 'https://hungpnh.dev/api/v1/telegram/sendMessage',
+				url: 'https://hungpnh.dev/api/v1/discord/sendMessage',
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
@@ -4672,7 +4693,8 @@
 	  
 	<!-- Loading -->
 	<div id="loading-overlay">
-        <div id="loading-spinner">Đang tải...</div>
-    </div>
+	  <div class="spinner"></div>
+	</div>
+
    </body>
 </html>
