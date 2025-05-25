@@ -3169,7 +3169,7 @@
 			<!-- }); -->
 		<!-- }); -->
 		
-		$('.btn-blessing1').on('click', function(e) {
+		$('.btn-blessing').on('click', function(e) {
 		
 			e.preventDefault();
 
@@ -3215,7 +3215,6 @@
 			};
 			// Hiển thị loading
 			$('#loading-overlay').show();
-			debugger;
 			$.ajax({
 				url: 'https://hungpnh.dev/api/v1/discord/sendMessage',
 				method: 'POST',
